@@ -3,7 +3,7 @@ require("dotenv").config();
 const express = require("express");
 const path = require("path");
 const bcrypt = require("bcrypt");
-//const helmet = require("helmet");
+const helmet = require("helmet");
 const rateLimit = require("express-rate-limit");
 
 const app = express();
@@ -123,3 +123,4 @@ app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 
 });
+
